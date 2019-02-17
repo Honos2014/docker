@@ -1,4 +1,4 @@
-TAG = coady/pylucene
+TAG = pylucene
 
 all:
 	docker build -t $(TAG) -t $(TAG):7 -t $(TAG):7.6 -t $(TAG):7.6.0 .
