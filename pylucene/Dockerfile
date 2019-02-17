@@ -6,7 +6,7 @@ FROM python:$VERSION
 
 RUN apt-get update \
     && apt-get install -y default-jdk ant \
-    && apt install vim zsh -y
+    && apt install vim zsh ranger -y
 
 RUN sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
