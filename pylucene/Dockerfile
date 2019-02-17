@@ -1,6 +1,9 @@
 ARG VERSION=latest
 FROM python:$VERSION
 
+# 2019-02-17
+# docker run -v /YourCodesTestDir:/usr/src/ --name pylucene -ti pylucene /usr/bin/zsh
+
 RUN apt-get update \
     && apt-get install -y default-jdk ant \
     && apt install vim zsh -y
