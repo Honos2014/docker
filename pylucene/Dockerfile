@@ -2,7 +2,10 @@ ARG VERSION=latest
 FROM python:$VERSION
 
 RUN apt-get update \
-    && apt-get install -y default-jdk ant
+    && apt-get install -y default-jdk ant \
+    && apt install vim zsh -y
+
+RUN sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 WORKDIR /usr/src/pylucene
 RUN curl https://www.apache.org/dist/lucene/pylucene/pylucene-7.6.0-src.tar.gz \
