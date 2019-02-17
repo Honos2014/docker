@@ -1,2 +1,2 @@
 # pyLucce
-python 3 enviironnement for pyLucene
+python 3 environment for pyLucene
